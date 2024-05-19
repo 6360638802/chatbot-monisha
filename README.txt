@@ -1,4 +1,4 @@
-# chatbot
+# Chatbot
 
 This repository contains code for deploying a chatbot application using Flask.
 
@@ -40,27 +40,40 @@ To view the list of execution policies and check which policy has been updated, 
 
 Once you have configured the execution policy, proceed with installing the required packages for the chatbot application.
 
-1. Create a virtual environment:
+1. Clone the git repository:
 
     ```sh
+    git clone https://github.com/adarsh966/chatbot.git
     cd chatbot
+    ```
+
+    or
+
+    ```sh
+    git clone git@github.com:adarsh966/chatbot.git
+    cd chatbot
+    ```
+
+2. Create a virtual environment:
+
+    ```sh
     python3 -m venv venv
     ```
 
-2. Activate the virtual environment:
+3. Activate the virtual environment:
 
     ```sh
     source venv/bin/activate   # On macOS/Linux
     . venv\Scripts\activate    # On Windows
     ```
 
-3. Install required packages:
+4. Install required packages:
 
     ```sh
     pip install Flask torch torchvision nltk pyspellchecker flask-cors
     ```
 
-4. Download NLTK data:
+5. Download NLTK data:
 
     ```sh
     python   # Start the Python interpreter
@@ -68,7 +81,7 @@ Once you have configured the execution policy, proceed with installing the requi
     nltk.download('punkt')
     ```
 
-5. Verify installation of spellchecker and flask-cors:
+6. Verify installation of spellchecker and flask-cors:
 
     ```sh
     python   # Start the Python interpreter
